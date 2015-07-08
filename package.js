@@ -1,8 +1,8 @@
 Package.describe({
   name: 'leesangwon:connections',
-  version: '0.0.1',
+  version: '0.1.0',
   summary: 'monitor all the connection status of the Meteor server',
-  git: '',
+  git: 'https://github.com/miraten/meteor-connections',
   documentation: 'README.md'
 });
 
@@ -20,7 +20,7 @@ Package.onUse(function(api) {
 
   api.use([
     'mongo',
-    'leesangwon:logger',
+    'leesangwon:logger@0.2.4',
   ], 'server');
 
   api.addFiles('lib/connections.js');
