@@ -1,6 +1,6 @@
 Package.describe({
   name: 'leesangwon:connections',
-  version: '0.1.0',
+  version: '0.1.1',
   summary: 'monitor all the connection status of the Meteor server',
   git: 'https://github.com/miraten/meteor-connections',
   documentation: 'README.md'
@@ -8,9 +8,12 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
+
   api.use([
+    'ecmascript',
     'underscore'
   ]);
+
   api.use([
     'session',
     'tracker',
